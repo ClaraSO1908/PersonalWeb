@@ -15,8 +15,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: black url("../img/background.jpg") top right no-repeat;
-  background-size: contain;
+  background: black url("../img/me-background.jpg") top no-repeat;
+  background-size: cover;
   left: 0;
   right: 0;
   top: 0;
@@ -90,7 +90,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #header h1 a,
@@ -130,14 +130,14 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 70%;
   width: 40px;
   height: 40px;
-  margin: 10px;
+  margin: 1px;
   font-size: 24px;
-  color: #333;
+  color: #1f2531;
   text-decoration: none;
 }
 
 #header .social-links a:hover {
-  color: #003cff;
+  color: #9db462;
 }
 
 @media (max-width: 992px) {
@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(61,153,241);
 }
 
 #header.header-top .social-links,
@@ -212,12 +212,12 @@ h1,h2,h3,h4,h5,h6 {
 * Desktop Navigation 
 */
 .navbar {
-  position: absolute;
-  top: 30px; 
+  position: fixed;
+  top: 10px; 
   right: 0;
   margin-top: 30px; 
-  margin-right: 15px; 
-  background-color: rgba(0, 0, 0, 0.9); 
+  margin-right: 15px;
+  background-color: transparent;
   padding: 10px; 
   border-radius: 5px;
 }
@@ -318,7 +318,8 @@ h1,h2,h3,h4,h5,h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  /*background: rgba(0, 0, 0, 0.9);*/
+  background-color: transparent;
   transition: 0.3s;
   z-index: 999;
   margin-top: 30px;
@@ -379,7 +380,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(37,66,74,255);
   padding: 30px;
 }
 

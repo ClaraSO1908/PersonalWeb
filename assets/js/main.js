@@ -149,94 +149,49 @@
   }
 
   /**
-   * Testimonials slider
+   * Phrases slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
+  document.addEventListener("DOMContentLoaded", function () {
+    const phrasesSlider = new Swiper(".phrases-slider", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+  
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
       }
-    }
+    });
   });
 
   /**
-   * Porfolio isotope and filter
+   * CV Button
    */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-      }, true);
-    }
-
+  document.addEventListener("DOMContentLoaded", function () {
+    var downlandButtom = document.getElementById("downlandPDF");
+    downlandButtom.addEventListener("click", function () {
+      var pdfURL = 'assets/cv.pdf';
+      window.open(pdfURL, '_blank');
+    });
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Contact Form
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Initiate portfolio details lightbox 
-   */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  
 
   /**
    * Initiate Pure Counter 

@@ -35,7 +35,7 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-      <h1><a href="index.html"><span class="color1" style="color: whitesmoke;">Clara</span> <span class="color2" style="color: rgb(0, 255, 115);">Sacedón Ortega</span></a></h1>
+      <h1><a href="index.html">Clara Sacedón Ortega</a>
       <div class="writting">
         <h2>Apasionada <span id="dynamic-text"></span></h2>
       </div>
@@ -330,7 +330,7 @@
               </p>
               <img src="assets/img/frases/Babe_Ruth.jpeg" class="phrases-img" alt="">
               <h3>Babe Ruth</h3>
-              <h4>Jugador de beisbol</h4>
+              <h4>Jugador de béisbol</h4>
             </div>
           </div>
 
@@ -374,22 +374,6 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const phrasesSlider = new Swiper(".phrases-slider", {
-              slidesPerView: 3,
-              spaceBetween: 10,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              autoplay: {
-                delay: 7000,
-                disableOnInteraction: false,
-              },
-            });
-          });
-        </script>
       </div>
     </div><!-- Phrases End  -->
   </section><!-- Know me End -->
@@ -520,14 +504,8 @@
       </div>
 
       <div class="centered">
-        <button type="button" onclick="abrirPDF()">Descargar currículum</button>
+        <button id="downlandPDF" type="button">Descargar currículum</button>
       </div>
-      <script>
-        function abrirPDF() {
-            var pdfURL = 'assets/cv.pdf';
-            window.open(pdfURL, '_blank');
-        }
-      </script>
 
     </div>
   </section><!-- Resume End -->
@@ -604,38 +582,9 @@
         <div class="text-center"><button type="submit">Enviar mensaje</button></div>
       </form>
 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-      $(document).ready(function() {
-          $(".php-email-form").submit(function(e) {
-              e.preventDefault();
-      
-              var form = $(this);
-              var formData = form.serialize();
-      
-              $.ajax({
-                  type: "POST",
-                  url: "contact.php",
-                  data: formData,
-                  dataType: "json",
-                  success: function(response) {
-                      if (response.status === "success") {
-                          $(".sent-message").html(response.message).fadeIn();
-                          form.trigger("reset");
-                      } else {
-                          $(".error-message").html("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.").fadeIn();
-                      }
-                  },
-                  error: function() {
-                      $(".error-message").html("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.").fadeIn();
-                  }
-              });
-          });
-      });
-      </script>      
-
     </div>
   </section><!-- Contact End -->
 
