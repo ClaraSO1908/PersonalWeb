@@ -2,6 +2,36 @@
   "use strict";
 
   /**
+   * Languages
+   */
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectLanguage = document.getElementById("selectLanguage");
+    const toggleLinkForPrincipal = document.getElementById("toggleLanguageForPrincipal");
+    const otherNavLinks = document.querySelectorAll(".nav-link:not(#toggleLanguageForPrincipal)");
+  
+    toggleLinkForPrincipal.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (selectLanguage.style.display === "block") {
+        selectLanguage.style.display = "none";
+      } else {
+        selectLanguage.style.display = "block";
+      }
+    });
+  
+    otherNavLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        selectLanguage.style.display = "none";
+      });
+    });
+  
+    document.addEventListener("click", function (e) {
+      if (e.target !== selectLanguage && e.target !== toggleLinkForPrincipal && !otherNavLinks.includes(e.target)) {
+        selectLanguage.style.display = "none";
+      }
+    });
+  });
+
+  /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
@@ -187,11 +217,6 @@
       window.open(pdfURL, '_blank');
     });
   });
-
-  /**
-   * Contact Form
-   */
-  
 
   /**
    * Initiate Pure Counter 
