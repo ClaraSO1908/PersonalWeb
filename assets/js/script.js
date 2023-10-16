@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
        */
       title: "Clara Sacedón Ortega",
       subtitle: "Passionate",
+      subtitle2: "Computer Engineering",
       dynamicText: ["Computer Engineer", "developer"],
       languageEN: "English",
       languageES: "Spanish",
@@ -148,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
        */
       title: "Clara Sacedón Ortega",
       subtitle: "Apasionada",
+      subtitle2: "Ingeniera Informática",
       dynamicText: ["Ingeniera Informática", "desarrolladora"],
       languageEN: "Inglés",
       languageES: "Español",
