@@ -757,6 +757,7 @@ button[type=submit]:hover {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  position: relative;
 }
 
 .contact .info-box i.bx {
