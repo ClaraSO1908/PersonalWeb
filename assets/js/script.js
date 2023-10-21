@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       cruzRoja: "Spanish Red Cross",
   
       //Licences and certifications
-      certiications: "Licences and certifications",
+      certifications: "Licences and certifications",
       ce1: "Leisure monitor and free time",
       ce2: "Professional Workshop 'Activities and Games in Special Education'",
       divDinamica: "Divulgación dinámica S.L.",
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       v4: "Volunteer in the fight against poverty.",
       v5: "2019-Present",
       v6: "Volunteer in the Environment.",
-      v7: "Cruz Roja Española Juventud",
+      v7: "Spanish Red Cross Youth",
       v8: "2020-Present",
       v9: "Solidarity campaigns and childhood.",
       v10: "2022-Present",
@@ -217,11 +217,11 @@ document.addEventListener("DOMContentLoaded", function () {
       education: "Educación",
       e1: "Bachillerato LOMCE",
       e2: "Colegio Nuestra Señora del Carmen, Madrid",
-      e3: "Bachillerato de ciencias con psicología y tecnologías de la información y la comunicación como optativas",
+      e3: "Bachillerato de ciencias con psicología y tecnologías de la información y la comunicación como optativas.",
       e4: "Ingeniería Informática",
       e5: "2019-Actualidad",
       e6: "Escuela Superior de Informática, Universidad de Castilla-La Mancha, Ciudad Real",
-      e7: "Especialidad Tecnologías de la Información",
+      e7: "Especialidad Tecnologías de la Información.",
   
       //Cursos
       courses: "Cursos",
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
       cruzRoja: "Cruz Roja Española",
   
       //Licencias y Certificaciones
-      certiications: "Licencias y certificaciones",
+      certifications: "Licencias y certificaciones",
       ce1: "Monitor de ocio y tiempo libre",
       ce2: "Taller Profesional 'Actividades y Juegos en Educación Especial'",
       divDinamica: "Divulgación dinámica S.L.",
@@ -242,16 +242,16 @@ document.addEventListener("DOMContentLoaded", function () {
       //Voluntariados
       volunteering: "Voluntariados",
       v1: "Colegio Nuestra Señora del Carmen",
-      v2: "Ayuda en la gestión y organización de diferentes campañas solidarias y actividades extraescolares",
+      v2: "Ayuda en la gestión y organización de diferentes campañas solidarias y actividades extraescolares.",
       v3: "Cáritas Española",
-      v4: "Personal voluntario en lucha contra la pobreza",
+      v4: "Personal voluntario en lucha contra la pobreza.",
       v5: "2019-Actualidad",
-      v6: "Personal voluntario en Medio Ambiente",
+      v6: "Personal voluntario en Medio Ambiente.",
       v7: "Cruz Roja Española Juventud",
       v8: "2020-Actualidad",
-      v9: "Campañas solidarias e infancia",
+      v9: "Campañas solidarias e infancia.",
       v10: "2022-Actualidad",
-      v11: "Referente Medio Ambiente Ciudad Real",
+      v11: "Referente Medio Ambiente Ciudad Real.",
   
       //Idiomas
       language: "Idiomas",

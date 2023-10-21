@@ -46,9 +46,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .button-container {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 20px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .button[type=button] {
