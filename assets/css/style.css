@@ -1011,6 +1011,51 @@ button[type=submit]:hover {
   color: #18d26e;
 }
 
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  margin: 5px;
+}
+
+.subcolumna {
+  margin-bottom: 5px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.celda {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  margin: 5px;
+}
+
+.celda-ampliada {
+  flex: 2;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .columna {
+    flex: 100%;
+  }
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
