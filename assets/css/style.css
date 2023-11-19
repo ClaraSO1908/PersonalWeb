@@ -15,7 +15,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: black url("../img/me-background.jpg") top no-repeat;
+  background: black url("../img/me-background.webp") top no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -136,12 +136,12 @@ option[value=""][disabled] {
   height: 40px;
   margin: 10px;
   font-size: 24px;
-  color: #1f2531;
+  color: white;
   text-decoration: none;
 }
 
 #header .social-links a:hover {
-  color: #9db462;
+  color: aquamarine;
 }
 
 @media (max-width: 992px) {
@@ -956,6 +956,11 @@ button[type=submit]:hover {
   width: 360px;
   height: 200px;
   object-fit: auto;
+}
+
+.portfolio-wrap {
+  min-height: 100px;
+  max-width: 360px;
 }
 
 /*--------------------------------------------------------------
