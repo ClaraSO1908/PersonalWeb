@@ -153,7 +153,7 @@
 
   /**
    * Phrases slider
-   */
+  */
   document.addEventListener("DOMContentLoaded", function () {
     const phrasesSlider = new Swiper(".phrases-slider", {
       slidesPerView: 3,
@@ -171,7 +171,7 @@
           slidesPerView: 1,
           spaceBetween: 20
         },
-  
+
         1200: {
           slidesPerView: 3,
           spaceBetween: 20
@@ -179,7 +179,7 @@
       }
     });
   });
-
+  
   /**
    * Initiate portfolio lightbox 
    */

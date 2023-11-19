@@ -953,14 +953,15 @@ button[type=submit]:hover {
 }
 
 .portfolio-preview-image {
-  width: 360px;
+  width: 300px;
   height: 200px;
   object-fit: auto;
 }
 
 .portfolio-wrap {
   min-height: 100px;
-  max-width: 360px;
+  min-width: 100px;
+  max-width: 300px;
 }
 
 /*--------------------------------------------------------------
