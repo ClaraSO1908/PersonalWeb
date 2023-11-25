@@ -749,6 +749,31 @@ button[type=submit]:hover {
   height: 15vh;
 }
 
+.item {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(12,44,63,0.5);
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width: 180px;
+  height: 80px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 4px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/

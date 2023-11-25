@@ -179,7 +179,16 @@
       }
     });
   });
-  
+
+  /**
+   * Initiate volunteering details lightbox 
+   */
+  const volunteeringDetailsLightbox = GLightbox({
+    selector: '.volunteering-details-lightbox',
+    width: '90%',
+    height: '90vh'
+  });
+
   /**
    * Initiate portfolio lightbox 
    */
