@@ -51,6 +51,7 @@
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '#navbar .nav-link', handleNavLinkClick, true);
+  on('click', '#header', handleNavLinkClick);
   on('click', '#contacto', handleNavLinkClick);
   on('click', '#portafolio', handleNavLinkClick);
 

@@ -8,12 +8,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             padding: 50px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
         }
+
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+
         h1 {
             color: #555;
         }
+
         p {
             color: #777;
         }
@@ -21,8 +32,14 @@
 </head>
 <body>
     <img src="assets/img/404NOTFOUND.webp" alt="Imagen de error 404">
-    <h1>Error 404 - Página no encontrada</h1>
-    <p>Parece que algo ha ido mal :(</p>
-    <p>Por favor, vuelva a la <a href="clarasacedon.netlify.app/" target="_blank">página principal.</a></p>
+    <div>
+        <h1>Error 404 - Página no encontrada</h1>
+        <p>Parece que algo ha ido mal :(</p>
+        <p>Por favor, vuelva a la <a id="header" href="#header">página principal.</a></p>
+    </div>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
