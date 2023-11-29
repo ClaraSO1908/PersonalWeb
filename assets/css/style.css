@@ -463,6 +463,11 @@ section .container {
   margin-bottom: 0;
 }
 
+.text-and-button {
+  display: flex;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/

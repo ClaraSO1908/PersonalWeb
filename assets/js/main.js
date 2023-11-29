@@ -53,6 +53,7 @@
   on('click', '#navbar .nav-link', handleNavLinkClick, true);
   on('click', '#header', handleNavLinkClick);
   on('click', '#contacto', handleNavLinkClick);
+  on('click', '#contactoAbout', handleNavLinkClick);
   on('click', '#portafolio', handleNavLinkClick);
 
   function handleNavLinkClick(e) {
