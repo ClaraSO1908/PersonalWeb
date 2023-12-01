@@ -1,2 +1,15 @@
+User-agent: Googlebot
+Disallow: /no-indexar/
+
+User-agent: Bingbot
+Disallow: /no-indexar/
+
+User-agent: Yahoo Slurp
+Disallow: /no-indexar/
+
 User-agent: *
-Disallow: 
+Disallow: /libraries/
+Disallow: /assets/vendor/
+Disallow: /assets/img/
+
+Sitemap: https://www.clarasacedon.netlify.app/sitemap.xml

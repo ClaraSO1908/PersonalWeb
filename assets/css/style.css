@@ -1095,18 +1095,21 @@ button[type=submit]:hover {
   color: #18d26e;
 }
 
-/*--------------------------------------------------------------
-# 404 NOT FOUND
---------------------------------------------------------------*/
+/* Nuevas reglas para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
-  .error-section {
-      padding: 10px;
+  body.error-404 {
+      flex-direction: column;
+      text-align: center;
   }
 
-  .error-section img {
-      max-width: 100%;
+  body.error-404 img {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 20px;
   }
 }
+
+
 
 @keyframes animate-loading {
   0% {
