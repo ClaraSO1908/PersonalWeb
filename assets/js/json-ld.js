@@ -18,3 +18,15 @@ var jsonLdData = {
       "https://t.me/clarasortega"
     ]
 };
+
+var jsonLdData = {
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "name": "Error 404 - Página no encontrada",
+  "description": "Página 404 personalizada de Clara Sacedón Ortega",
+  "url": "https://clarasacedon.netlify.app/",
+  "image": {
+      "@type": "ImageObject",
+      "url": "assets/img/404NOTFOUND.webp"
+  }
+}
