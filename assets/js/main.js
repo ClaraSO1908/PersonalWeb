@@ -52,9 +52,16 @@
    */
   on('click', '#navbar .nav-link', handleNavLinkClick, true);
   on('click', '#header', handleNavLinkClick);
+  on('click', '#header404', handleNavLinkClick);
+  on('click', '#about404', handleNavLinkClick);
+  on('click', '#resume404', handleNavLinkClick);
+  on('click', '#skills404', handleNavLinkClick);
+  on('click', '#portafolio', handleNavLinkClick);
+  on('click', '#portafolio404', handleNavLinkClick);
   on('click', '#contacto', handleNavLinkClick);
   on('click', '#contactoAbout', handleNavLinkClick);
-  on('click', '#portafolio', handleNavLinkClick);
+  on('click', '#contactoResume', handleNavLinkClick);
+  on('click', '#contacto404', handleNavLinkClick);
 
   function handleNavLinkClick(e) {
     let section = select(this.hash);

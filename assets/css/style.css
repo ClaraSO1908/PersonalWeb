@@ -1095,7 +1095,9 @@ button[type=submit]:hover {
   color: #18d26e;
 }
 
-/* Nuevas reglas para pantallas más pequeñas */
+/*--------------------------------------------------------------
+# 404 PAGE
+--------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   body.error-404 {
       flex-direction: column;
@@ -1108,8 +1110,6 @@ button[type=submit]:hover {
       margin-bottom: 20px;
   }
 }
-
-
 
 @keyframes animate-loading {
   0% {
