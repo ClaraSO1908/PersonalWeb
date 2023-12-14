@@ -30,59 +30,15 @@
         <div class="sidebar">
             <nav>
                 <ul>
-                    <li><a id="principalLink" href="../index.html"><i class="fas fa-home"></i>Principal</a></li>
-                    <li><a id="conocemeLink" href="javascript:void(0);"><i class="fas fa-user"></i>Conóceme</a></li>
-                    <li><a id="formacionLink" href="../index.html#resume"><i class="fas fa-graduation-cap"></i>Formación</a></li>
-                    <li><a id="habilidadesLink" href="../index.html#skills"><i class="fas fa-cogs"></i>Habilidades</a></li>
-                    <li><a id="portfolioLink" href="../index.html#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-                    <li><a id="contactoLink" href="../index.html#contact"><i class="fas fa-envelope"></i>Contacto</a></li>
+                    <li><a id="header404" href="../index.html"><i class="fas fa-home"></i>Principal</a></li>
+                    <li><a id="about404" href="../index.html#about"><i class="fas fa-user"></i>Conóceme</a></li>
+                    <li><a id="resume404" href="../index.html#resume"><i class="fas fa-graduation-cap"></i>Formación</a></li>
+                    <li><a id="skills404" href="../index.html#skills"><i class="fas fa-cogs"></i>Habilidades</a></li>
+                    <li><a id="portfolio404" href="../index.html#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                    <li><a id="contact404" href="../index.html#contact"><i class="fas fa-envelope"></i>Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var principal = document.getElementById('principalLink');
-            var conoceme = document.getElementById('conocemeLink');
-
-            var formacion = document.getElementById('formacionLink');
-            var habilidades = document.getElementById('habilidadesLink');
-
-            var portfolio = document.getElementById('portfolioLink');
-            var contacto = document.getElementById('contactoLink');
-
-            principal.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'principal');
-                window.location.href = 'index.html';
-            });
-
-            conoceme.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'conoceme');
-                window.location.href = 'index.html';
-            });
-
-            formacion.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'formacion');
-                window.location.href = 'index.html';
-            });
-
-            habilidades.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'habilidades');
-                window.location.href = 'index.html';
-            });
-
-            portfolio.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'portfolio');
-                window.location.href = 'index.html';
-            });
-
-            contacto.addEventListener('click', function(event) {
-                sessionStorage.setItem('redirectTo', 'contacto');
-                window.location.href = 'index.html';
-            });
-        });
-    </script>
-
 </body>
 </html>
