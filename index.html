@@ -71,7 +71,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Principal</a></li>
-          <li><a class="nav-link" href="#about">Conóceme</a></li>
+          <li><a id="sobremi" class="nav-link" href="#about">Conóceme</a></li>
           <li><a class="nav-link" href="#resume">Formación</a></li>
           <li><a class="nav-link" href="#skills">Habilidades</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -1026,6 +1026,20 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/json-ld.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var redirectTo = sessionStorage.getItem('redirectTo');
+    if (redirectTo) {
+        var section = document.getElementById(redirectTo);
+        console.log(section);
+        if (section=="conoceme") {
+          document.getElementById('about').click();
+        }
+        sessionStorage.removeItem('redirectTo');
+    }
+    });
+  </script>
   
 </body>
 </html>
