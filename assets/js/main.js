@@ -108,6 +108,18 @@
         });
         section.classList.add('section-show');
       }
+
+      var miEnlace = document.getElementById("titulo");
+      miEnlace.textContent = "Clara Sacedón Ortega";
+
+      var miEnlace2 = document.getElementById("subtitulo");
+      var contenidoVariable = `
+        <span class="color1" data-translate="subtitle2">Ingeniera Informática</span>
+        <br><br>
+        <a id="contacto" href="#contact" class="btn btn-success">Contacto</a>
+        <span style="margin: 10px;"></span>
+        <a href="assets/CV.pdf" class="btn btn-success" target="_blank">Descargar currículum</a>`;
+      miEnlace2.innerHTML = contenidoVariable;
   
       scrollto(this.hash);
     }
