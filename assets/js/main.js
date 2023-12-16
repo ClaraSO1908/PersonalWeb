@@ -110,7 +110,7 @@
       }
 
       var miEnlace = document.getElementById("titulo");
-      miEnlace.textContent = "Clara Sacedón Ortega";
+      miEnlace.innerHTML = '<a href="index.html">Clara Sacedón Ortega</a>';
 
       var miEnlace2 = document.getElementById("subtitulo");
       var contenidoVariable = `
@@ -120,6 +120,13 @@
         <span style="margin: 10px;"></span>
         <a href="assets/CV.pdf" class="btn btn-success" target="_blank">Descargar currículum</a>`;
       miEnlace2.innerHTML = contenidoVariable;
+
+      // Obtiene el elemento por su ID
+      var subtitulo = document.getElementById("subtitulo");
+
+      if (subtitulo.hasAttribute("style")) {
+        subtitulo.removeAttribute("style");
+      }
 
       if (document.body.classList.contains('background-404')) {
         document.body.classList.remove("background-404");
