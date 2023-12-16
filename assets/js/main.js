@@ -120,6 +120,11 @@
         <span style="margin: 10px;"></span>
         <a href="assets/CV.pdf" class="btn btn-success" target="_blank">Descargar currículum</a>`;
       miEnlace2.innerHTML = contenidoVariable;
+
+      if (document.body.classList.contains('background-404')) {
+        document.body.classList.remove("background-404");
+        document.body.classList.add("background-original");
+      }
   
       scrollto(this.hash);
     }
