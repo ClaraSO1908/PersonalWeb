@@ -964,6 +964,11 @@ button[type=submit]:hover {
   right: 15px;
 }
 
+.portfolio .portfolio-item img {
+  max-width: 100%;
+  height: auto; /* Para mantener la proporción de aspecto original de la imagen */
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
