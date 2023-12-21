@@ -640,7 +640,13 @@ section .container {
   background-color: #18d26e;
 }
 
-@media (max-width: 280px) {
+/*@media (max-width: 280px) {
+  .phrases{
+    display: none;
+  }
+}*/
+
+@media (max-width: 1200px) {
   .phrases{
     display: none;
   }
