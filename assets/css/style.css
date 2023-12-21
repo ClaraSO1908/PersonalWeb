@@ -646,7 +646,7 @@ section .container {
   }
 }*/
 
-@media (max-width: 1200px) {
+@media (max-width: 350px) {
   .phrases{
     display: none;
   }
@@ -966,7 +966,7 @@ button[type=submit]:hover {
 
 .portfolio .portfolio-item img {
   max-width: 100%;
-  height: auto; /* Para mantener la proporción de aspecto original de la imagen */
+  height: auto;
 }
 
 /*--------------------------------------------------------------
